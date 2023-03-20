@@ -22,8 +22,8 @@
     <Compile Include="Product.wxs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Client Application\ClientApplication1.csproj">
-      <Name>ClientApplication1</Name>
+    <ProjectReference Include="..\Client Application\Client Application1.csproj">
+      <Name>Client Application1</Name>
       <Project>{9a5ccead-7d1d-49a6-a42f-fc28f968e4e9}</Project>
       <Private>True</Private>
       <DoNotHarvest>True</DoNotHarvest>

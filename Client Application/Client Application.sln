@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client Application1", "Clie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApplication2", "ClientApplication\ClientApplication2.csproj", "{5156A256-0C98-43F9-ACD1-9283308E59A0}"
 EndProject
-Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "ClientApp1Installer", "ClientApp1 Installer\ClientApp1Installer.wixproj", "{FBF1ACEA-02FD-46F1-872F-1FFDF3A974F1}"
+Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "ClientApp1 Installer", "ClientApp1 Installer\ClientApp1 Installer.wixproj", "{FBF1ACEA-02FD-46F1-872F-1FFDF3A974F1}"
 EndProject
 Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "ClientApp2Installer", "ClientApp2Installer\ClientApp2Installer.wixproj", "{7808D3D6-1FFB-418F-B173-A0F1162F9531}"
 EndProject

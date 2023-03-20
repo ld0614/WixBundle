@@ -2,7 +2,7 @@
   <Fragment>
     <ComponentGroup Id="ExampleComponents" Directory="INSTALLFOLDER">
       <Component>
-		  <File Source="$(ClientApplication1.ProjectDir)\Program.cs" />
+		  <File Source="$(ClientApplication1.TargetPath)" />
       </Component>
     </ComponentGroup>
   </Fragment>

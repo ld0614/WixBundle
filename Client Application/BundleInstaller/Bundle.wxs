@@ -1,0 +1,43 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:bal="http://wixtoolset.org/schemas/v4/wxs/bal">
+  <Bundle Name="BundleInstaller" Manufacturer="TODO Manufacturer" Version="1.0.0.0" UpgradeCode="ee1e66f6-3fa8-4165-92e9-cccd8212c07c">
+    <BootstrapperApplication>
+      <bal:WixStandardBootstrapperApplication LicenseUrl="https://www.example.com/license" Theme="hyperlinkLicense" />
+    </BootstrapperApplication>
+
+    <Chain>
+		<PackageGroupRef Id="ClientAppInstaller1"/>
+		<PackageGroupRef Id="ClientAppInstaller2"/>
+    </Chain>
+
+  </Bundle>
+
+	<Fragment>
+		<PackageGroup Id="ClientAppInstaller1">
+			<MsiPackage Visible="yes"
+						Cache="remove"
+		                ForcePerMachine="yes"
+						bal:PrimaryPackageType="default"
+						Vital="yes">
+				<MsiPackagePayload
+					SourceFile="$(ClientApp1Installer.TargetPath)"
+					Compressed="yes"
+				/>
+			</MsiPackage>
+		</PackageGroup>
+	</Fragment>
+
+	<Fragment>
+		<PackageGroup Id="ClientAppInstaller2">
+			<MsiPackage Visible="yes"
+						Cache="remove"
+		                ForcePerMachine="yes"
+						bal:PrimaryPackageType="default"
+						Vital="yes">
+				<MsiPackagePayload
+					SourceFile="$(ClientApp2Installer.TargetPath)"
+					Compressed="yes"
+				/>
+			</MsiPackage>
+		</PackageGroup>
+	</Fragment>
+</Wix>

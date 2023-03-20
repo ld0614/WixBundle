@@ -1,0 +1,9 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Name="ClientApp1_Installer" Manufacturer="TODO Manufacturer" Version="1.0.0.0" UpgradeCode="149f6f7e-0df6-4cc4-bd49-58b8e76a0fa7">
+    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
+
+    <Feature Id="Main">
+      <ComponentGroupRef Id="ExampleComponents" />
+    </Feature>
+  </Package>
+</Wix>
